@@ -22,6 +22,8 @@ app.post('/alumnos', (req, res) => {
             alumnos = JSON.parse(data);
         }
 
+        console.log(alumnos)
+        console.log(req.body)
         // Agrega el nuevo registro al arreglo de alumnos
         alumnos.push(req.body);
 
